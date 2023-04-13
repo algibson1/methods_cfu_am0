@@ -55,14 +55,14 @@ favorite_place = "Olympic National Park"
 # The insert method is called on the favorite_place variable, which stores the string object "Olympic National Park".
 #The insert method returns an additional string object inserted in the original string object, at an index position given in the parameters
 #In this example, the return value will be "Olympic National Park, Washington" because the string object ", Washington" will be inserted at index position 21 of the string object "Olympic National Park"
-# The puts command prints the return value ("Olympic National Park, Washington") to the console
-puts favorite_place.insert(21, ", Washington")
+# # The puts command prints the return value ("Olympic National Park, Washington") to the console
+# puts favorite_place.insert(21, ", Washington")
 
-#The swapcase method is called on the current_state variable, which stores the string object "Oregon"
-#No argument is passed; swapecase has one clear job which is to lowercase all uppercase letters and uppercase all lowercase letters in the original string object.
-#In this example, the return value will be "oREGON" because it will lowercase the first letter, and uppercase the rest, which is the opposite casing of the original string value "Oregon"
-# the puts command prints the return value (oREGON) to the console
-puts current_state.swapcase!
+# #The swapcase method is called on the current_state variable, which stores the string object "Oregon"
+# #No argument is passed; swapecase has one clear job which is to lowercase all uppercase letters and uppercase all lowercase letters in the original string object.
+# #In this example, the return value will be "oREGON" because it will lowercase the first letter, and uppercase the rest, which is the opposite casing of the original string value "Oregon"
+# # the puts command prints the return value (oREGON) to the console
+# puts current_state.swapcase!
 
 
 # SECTION 3: Calling methods on variables assigned to integers.
@@ -71,7 +71,20 @@ puts current_state.swapcase!
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+roth_ira = 6500
+elf_age = 237
 
+#The sqrt method is called on the variable roth_ira, which is stored as the integer 6500
+#The sqrt method determines the square root of the given integer and rounds down to the nearest whole number value
+#In this example, the square root of the integer saved as the variable roth_ira (6500) is not a whole number, but falls between the two whole numbers 80 and 81, so the method will return the lower whole number (80)
+#The puts command will then print the whole number 80 to the console
+puts Integer.sqrt(roth_ira)
+
+#The ceil method is called on the variable elf_age which is stored as the integer 237
+#The ceil method will return the next whole number either greater than or equal to the input integer containing the given parameter of trailing zeros
+#In this example, with the argument set as -2, the returned integer will be the next sequential number above the integer 237 which has two trailing zeroes (300)
+#The puts command will print the return of 300 to the console
+puts elf_age.ceil(-2)
 
 # SECTION 4: Calling methods on variables assigned to arrays.
 # Declare 2 variables assigned to arrays.
