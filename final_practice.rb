@@ -76,12 +76,18 @@ p amy_greeting
 # # 4: Write a method named square that takes in one integer, and returns the square of that integer.
 # # Bonus: Print a sentence that interpolates the return value of your square method.
 
-# def square(num)
-#     num*num
-# end
+def square(num)
+    num*num
+end
 
-# p square(3)
-# p square(6)
+p square(3)
+p square(6)
+
+four = square(2)
+p four
+
+int = 3
+p "The square of #{int} is equal to #{square(int)}"
 
 
 # # What is the return value of your method?
@@ -90,10 +96,11 @@ p amy_greeting
 
 # # How many arguments did you pass your method?
 
-
+#One argument
 
 # # What data type was your argument(s)?
 
+#My arguments were integers
 
 # # 5: Write a method named check_stock that satisfies the following interaction pattern:
 # # Hint: You will only write one check_stock method that checks the quantity and then prints the corresponding statement.
