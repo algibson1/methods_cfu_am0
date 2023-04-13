@@ -105,14 +105,33 @@ p "The square of #{int} is equal to #{square(int)}"
 # # 5: Write a method named check_stock that satisfies the following interaction pattern:
 # # Hint: You will only write one check_stock method that checks the quantity and then prints the corresponding statement.
 
-# check_stock(4, "Coffee");
+
+
+def check_stock(num, product)
+    if num >= 4
+        puts "#{product} - stocked"
+    elsif num >0
+        puts "#{product} - running LOW"
+    else
+        puts "#{product} - OUT of stock!"
+    end
+end
+
+
+check_stock(4, "Coffee");
 # # => "Coffee is stocked"
 
-# check_stock(3, "Tortillas");
+check_stock(3, "Tortillas");
 # # => "Tortillas - running LOW"
 
-# check_stock(0, "Cheese");
+check_stock(0, "Cheese");
 # # => "Cheese - OUT of stock!"
 
-# check_stock(1, "Salsa");
+check_stock(1, "Salsa");
 # # => "Salsa - running LOW"
+
+check_stock(5, "Oranges")
+check_stock(2, "Apples")
+
+#Changed the "stocked" response because "is stocked" only works grammatically if the product entered is singular. "Coffee is stocked" works but "Tortillas is stocked" wouldn't!
+#I originally considered that using an "ends.with?" method and then creating separate "is stocked" and "are stocked" messages would work, but, not all plural English words end in s and not all words ending in S are plural...
