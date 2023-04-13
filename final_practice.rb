@@ -10,7 +10,11 @@ def greeting
     "Hi there! Nice to meet you!"
 end
 
-p greeting
+hello = greeting
+p hello 
+
+hi = greeting
+p hi
 
 # What is the return value of your method?
 
@@ -26,62 +30,82 @@ def custom_greeting(name)
     "Hi there, #{name}! Nice to meet you!"
 end
 
-p custom_greeting("Anna")
-p custom_greeting("Charlie")
+anna_greeting = custom_greeting("Anna")
+charlie_greeting = custom_greeting("Charlie")
+
+p anna_greeting
+p charlie_greeting
 
 
-# What is the return value of your method?
+# # What is the return value of your method?
 
-#The return value is "Hi there, (name)! Nice to meet you!"
+# #The return value is "Hi there, (name)! Nice to meet you!"
 
-# How many arguments did you pass your method?
+# # How many arguments did you pass your method?
 
-#I passed two arguments through the method
+# #I passed one argument at a time through the method
 
-# What data type was your argument(s)?
+# # What data type was your argument(s)?
 
-#My arguments were string objects
+# #My arguments were string objects
 
-# 3: Write a method named greet_person that takes in 3 strings, a first, middle, and last name, and returns a sentence with the full name.
+# # 3: Write a method named greet_person that takes in 3 strings, a first, middle, and last name, and returns a sentence with the full name.
 
 def greet_person(first_name, middle_name, last_name)
     "Hi there, #{first_name} #{middle_name} #{last_name}! Nice to meet you!"
 end
 
-p greet_person("Sam", "Juni", "Blobooski")
+sam_greeting = greet_person("Sam", "Juni", "Blobooski")
+p sam_greeting
+amy_greeting = greet_person("Amy", "Laronna","Davis")
+p amy_greeting
 
 
-# What is the return value of your method?
+# # What is the return value of your method?
 
-#The return value is "Hi there, (full name)! Nice to meet you!"
+# #The return value is "Hi there, (full name)! Nice to meet you!"
 
-# How many arguments did you pass your method?
+# # How many arguments did you pass your method?
 
-#This method has three arguments
+# #This method has three arguments
 
-# What data type was your argument(s)?
+# # What data type was your argument(s)?
 
-#My arguments were string objects
+# #My arguments were string objects
 
-# 4: Write a method named square that takes in one integer, and returns the square of that integer.
-# Bonus: Print a sentence that interpolates the return value of your square method.
+# # 4: Write a method named square that takes in one integer, and returns the square of that integer.
+# # Bonus: Print a sentence that interpolates the return value of your square method.
 
-# What is the return value of your method?
-# How many arguments did you pass your method?
-# What data type was your argument(s)?
+# def square(num)
+#     num*num
+# end
+
+# p square(3)
+# p square(6)
 
 
-# 5: Write a method named check_stock that satisfies the following interaction pattern:
-# Hint: You will only write one check_stock method that checks the quantity and then prints the corresponding statement.
+# # What is the return value of your method?
 
-check_stock(4, "Coffee");
-# => "Coffee is stocked"
+# #The return value is equal to the square of the integer put in the argument
 
-check_stock(3, "Tortillas");
-# => "Tortillas - running LOW"
+# # How many arguments did you pass your method?
 
-check_stock(0, "Cheese");
-# => "Cheese - OUT of stock!"
 
-check_stock(1, "Salsa");
-# => "Salsa - running LOW"
+
+# # What data type was your argument(s)?
+
+
+# # 5: Write a method named check_stock that satisfies the following interaction pattern:
+# # Hint: You will only write one check_stock method that checks the quantity and then prints the corresponding statement.
+
+# check_stock(4, "Coffee");
+# # => "Coffee is stocked"
+
+# check_stock(3, "Tortillas");
+# # => "Tortillas - running LOW"
+
+# check_stock(0, "Cheese");
+# # => "Cheese - OUT of stock!"
+
+# check_stock(1, "Salsa");
+# # => "Salsa - running LOW"
