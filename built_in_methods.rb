@@ -61,6 +61,7 @@ puts favorite_place.insert(21, ", Washington")
 #The swapcase method is called on the current_state variable, which stores the string object "Oregon"
 #No argument is passed; swapecase has one clear job which is to lowercase all uppercase letters and uppercase all lowercase letters in the original string object.
 #In this example, the return value will be "oREGON" because it will lowercase the first letter, and uppercase the rest, which is the opposite casing of the original string value "Oregon"
+# the puts command prints the return value (oREGON) to the console
 puts current_state.swapcase!
 
 
