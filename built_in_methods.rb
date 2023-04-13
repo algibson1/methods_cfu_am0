@@ -78,16 +78,29 @@ elf_age = 237
 #The sqrt method determines the square root of the given integer and rounds down to the nearest whole number value
 #In this example, the square root of the integer saved as the variable roth_ira (6500) is not a whole number, but falls between the two whole numbers 80 and 81, so the method will return the lower whole number (80)
 #The puts command will then print the whole number 80 to the console
-puts Integer.sqrt(roth_ira)
+# puts Integer.sqrt(roth_ira)
 
-#The ceil method is called on the variable elf_age which is stored as the integer 237
-#The ceil method will return the next whole number either greater than or equal to the input integer containing the given parameter of trailing zeros
-#In this example, with the argument set as -2, the returned integer will be the next sequential number above the integer 237 which has two trailing zeroes (300)
-#The puts command will print the return of 300 to the console
-puts elf_age.ceil(-2)
+# #The ceil method is called on the variable elf_age which is stored as the integer 237
+# #The ceil method will return the next whole number either greater than or equal to the input integer containing the given parameter of trailing zeros
+# #In this example, with the argument set as -2, the returned integer will be the next sequential number above the integer 237 which has two trailing zeroes (300)
+# #The puts command will print the return of 300 to the console
+# puts elf_age.ceil(-2)
 
 # SECTION 4: Calling methods on variables assigned to arrays.
 # Declare 2 variables assigned to arrays.
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+prices = [23.34, 564.34, 432.87, 423.43, 897.78]
+chores = ["Check mail", "Sweep Kitchen", "Wash dishes", "Do Laundry", "Go Grocery Shopping"]
+
+#The sort method is called upon the chores array
+#The sort method will sort the array in ascending order- in this example, since the chores array contains strings with alphabet characters, the sort method will return the elements in the array in alphabetical order.
+#The puts command will print the elements in the array in alphabetical order to the console ("Check mail", "Do Laundry", "Go Grocery Shopping", "Sweep Kitchen", "Wash dishes")
+puts chores.sort! 
+
+#The all method is called on the prices array, which contains a series of floats
+#The all method will use the given argument (price > 200) to return a boolean response whether all prices in the array are greater than 200
+#The puts command will print the boolean return to the console (false)
+puts prices.all? {|price| price > 200 }
